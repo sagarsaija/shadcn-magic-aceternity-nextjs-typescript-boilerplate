@@ -1,9 +1,12 @@
 import Image from "next/image";
+import { FlipWords } from "@/components/ui/flip-words";
+import BlurIn from "@/components/magicui/blur-in";
+import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex mb-6">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
@@ -18,17 +21,6 @@ export default function Home() {
             By{" Sagar Saija "}
           </a>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={90}
-          height={18}
-          priority
-        />
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
@@ -103,28 +95,24 @@ export default function Home() {
         <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
           <h3 className="mb-4 text-xl font-semibold">Aceternity UI Showcase</h3>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {/* Add Aceternity UI components here */}
-            <div className="rounded-md bg-gray-100 p-4 dark:bg-gray-800">
-              Aceternity UI Component 1
-            </div>
+            {/* Add Aceternity UI components here to test them out */}
+            <FlipWords words={["Aceternity", "UI"]} />
           </div>
         </div>
         <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
           <h3 className="mb-4 text-xl font-semibold">Magic UI Showcase</h3>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {/* Add Magic UI components here */}
-            <div className="rounded-md bg-primary p-4 text-primary-foreground">
-              Magic UI Component 1
-            </div>
+            {/* Add Magic UI components here to test them out*/}
+            <BlurIn word="Magic UI" />
           </div>
         </div>
 
         <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
           <h3 className="mb-4 text-xl font-semibold">ShadCn UI Showcase</h3>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {/* Add ShadCn UI components here */}
-            <div className="rounded-md bg-muted p-4 text-muted-foreground">
-              ShadCn UI Component 1
+            {/* Add ShadCn UI components here to test them out*/}
+            <div className="flex justify-start">
+              <Badge>ShadCn</Badge>
             </div>
           </div>
         </div>
