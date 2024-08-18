@@ -25,8 +25,8 @@ export default function Home() {
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
           alt="Next.js Logo"
-          width={180}
-          height={37}
+          width={90}
+          height={18}
           priority
         />
       </div>
@@ -99,6 +99,36 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <section className="mt-12 space-y-12">
+        <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+          <h3 className="mb-4 text-xl font-semibold">Aceternity UI Showcase</h3>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {/* Add Aceternity UI components here */}
+            <div className="rounded-md bg-gray-100 p-4 dark:bg-gray-800">
+              Aceternity UI Component 1
+            </div>
+          </div>
+        </div>
+        <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+          <h3 className="mb-4 text-xl font-semibold">Magic UI Showcase</h3>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {/* Add Magic UI components here */}
+            <div className="rounded-md bg-primary p-4 text-primary-foreground">
+              Magic UI Component 1
+            </div>
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+          <h3 className="mb-4 text-xl font-semibold">ShadCn UI Showcase</h3>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {/* Add ShadCn UI components here */}
+            <div className="rounded-md bg-muted p-4 text-muted-foreground">
+              ShadCn UI Component 1
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
