@@ -1,4 +1,6 @@
-This is a Next.js boilerplate code with Aceternity UI, Magic UI, and ShadCn UI component library included.
+# Next.js Boilerplate with UI Libraries
+
+This is a Next.js boilerplate with Aceternity UI, Magicui, and shadcn/ui component libraries included.
 
 ## Getting Started
 
@@ -12,25 +14,27 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Add Aceternity UI, Magic UI, and ShadCn UI components
+## Add UI Components
 
 ### Aceternity UI
 
 To add Aceternity UI components:
 
 1. Import the desired component from https://ui.aceternity.com/components
-2. Use the component in your JSX which is located in the src/components/ui
+2. Use the component in your JSX which is located in the `src/components/ui` directory
 
-### Magic UI
+### Magicui
 
-To add Magic UI components:
+To add Magicui components:
 
-1. Import the desired component from https://magicui.design/docs/components/
-2. Use the component in your JSX which is located in the src/components/magicui
+1. Run the command `npx magicui-cli add <component-name>` to add the desired component
+2. Import the desired component from https://magicui.design/docs/components/
+3. Use the component in your JSX which is located in the `src/components/magicui` directory
 
-### ShadCn UI
+### shadcn/ui
 
-To add ShadCn UI components:
+To add shadcn/ui components:
 
-1. Import the desired component from https://ui.shadcn.com/docs/components/
-2. Use the component in your JSX which is located in the src/components/ui
+1. Run the command `npx shadcn-ui@latest add <component-name>` to add the desired component
+2. Import the component in your JSX
+3. Use the component in your JSX which is located in the `src/components/ui` directory
